@@ -1,0 +1,75 @@
+body{
+    background-color: #ffffff;
+}
+
+/* outer frame box */
+.outer-box{
+    width: 600px;
+    background-color: #383450;
+    border: 5px solid #bfc441;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* SECTION TITLES */
+.section-title {
+    font-size: 32px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* --- IMAGE CONTAINERS --- */
+
+/* 1 — large cropped background (cover) */
+.image-container-1 {
+    width: 450px;
+    height: 300px;
+    margin: 30px auto;
+    background-image: url("../image/WillemDafoe.jpg");
+    background-size: 180%;   /* ZOOM IN */
+    background-position: center;
+}
+/* 2 — background scaled to 200px and repeated */
+.image-container-2 {
+    width: 450px;
+    height: 300px;
+    margin: 30px auto;
+    background-image: url("../image/WillemDafoe.jpg");
+    background-size: 200px;
+    background-repeat: repeat;
+}
+
+/* 3 — centered small image, no repeat */
+.image-container-3 {
+    width: 450px;
+    height: 300px;
+    margin: 30px auto;
+    background-color: #bfc441;
+    background-image: url("../image/WillemDafoe.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* 4 — first HTML <img> full width */
+.image-container-4 img {
+    width: 450px;
+    margin: 20px auto;
+    object-fit: fill;
+}
+
+.image-container-5 {
+    width: 450px;
+    margin: 30px auto;
+    background-color: #bfc441;
+    padding-top: 20px;
+    box-sizing: border-box;  /* ensures padding doesn’t push content out */
+}
+
+.image-container-5 img {
+    width: 100%;    /* stays inside container */
+    display: block;
+    box-sizing: border-box;  /* includes border in width */
+}
